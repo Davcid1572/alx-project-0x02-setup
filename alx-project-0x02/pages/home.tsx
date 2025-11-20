@@ -3,6 +3,7 @@ import Link from "next/link";
 import Card from "@/components/common/Card";
 import PostModal from "@/components/common/PostModal";
 import { CardProps } from "@/interfaces";
+import Header from "@/components/layout/Header";
 
 const home = () => {
   const [posts, setPosts] = useState<CardProps[]>([]);
@@ -14,6 +15,7 @@ const home = () => {
 
   return (
     <div>
+      <Header />
       <h1>Welcome to home</h1>
       <Link href="/about">Go to About</Link>
       <div className="p-6 space-y-6">
