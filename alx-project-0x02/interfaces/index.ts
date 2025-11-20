@@ -8,7 +8,7 @@ export interface PostModalProps {
   onSubmit: (post: CardProps) => void;
 }
 
-export interface Postprops {
+export interface PostProps {
   userId: number;
   id: number;
   title: string;
